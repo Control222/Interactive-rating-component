@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ORANGE: hsl(25, 97%, 53%);
+
+  --WHITE: hsl(0, 0%, 100%);
+  --LIGHTGREY: hsl(217, 12%, 63%);
+  --DARKBLUE: hsl(213, 19%, 18%);
+  --VERYDARKBLUE: hsl(216, 12%, 8%);
+  --DARKBLUEBTN: hsl(216, 12%, 25%);
+}
+
+body {
+  background-color: var(--VERYDARKBLUE);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 400px;
+  background-color: var(--DARKBLUE);
+  padding: 1.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* RATING STATE */
+
+.star__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--DARKBLUEBTN);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+h1 {
+  color: var(--WHITE);
+  font-size: 1.5rem;
+}
+
+.rating__state h1 {
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: var(--LIGHTGREY);
+}
+
+/* RATING BUTTONS */
+
+.btn__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
+
+.btn__rating {
+  background-color: var(--DARKBLUEBTN);
+  color: var(--LIGHTGREY);
+  font-weight: 700;
+  border-radius: 50%;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  margin-bottom: 1.3rem;
+}
+
+.btn__rating:hover {
+  background-color: var(--ORANGE);
+  color: var(--VERYDARKBLUE);
+}
+
+.btn__rating:focus {
+  background-color: var(--WHITE);
+  color: var(--VERYDARKBLUE);
+}
+
+/* SUBMIT BUTTON */
+
+.btn__submit {
+  background-color: var(--ORANGE);
+  color: var(--VERYDARKBLUE);
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn__submit:hover {
+  background-color: var(--WHITE);
+}
+
+.btn__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* THANK YOU STATE */
+
+.thankyou__state {
+  text-align: center;
+  padding: 1rem;
+}
+
+.thankyou__image {
+  margin-bottom: 1rem;
+}
+
+.rating__text {
+  color: var(--ORANGE);
+  background-color: var(--DARKBLUEBTN);
+  display: inline-block;
+  padding: 0.5rem 1rem 0.3rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thankyou__state h1 {
+  margin-bottom: 1rem;
+}
+
+.thankyou__state .text {
+  margin-bottom: 1rem;
+}
